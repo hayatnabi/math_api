@@ -1,0 +1,209 @@
+---
+openapi: 3.0.1
+info:
+  title: Math API V1
+  version: v1
+  description: 'API for basic math operations: add, subtract, multiply, divide, sqrt,
+    power, mod, log, trigonometry functions.'
+paths:
+  "/add":
+    get:
+      summary: Add two numbers
+      tags:
+      - Math
+      parameters:
+      - name: a
+        in: query
+        required: true
+        schema:
+          type: number
+      - name: b
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/subtract":
+    get:
+      summary: Subtract two numbers
+      tags:
+      - Math
+      parameters:
+      - name: a
+        in: query
+        required: true
+        schema:
+          type: number
+      - name: b
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/multiply":
+    get:
+      summary: Multiply two numbers
+      tags:
+      - Math
+      parameters:
+      - name: a
+        in: query
+        required: true
+        schema:
+          type: number
+      - name: b
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/divide":
+    get:
+      summary: Divide two numbers
+      tags:
+      - Math
+      parameters:
+      - name: a
+        in: query
+        required: true
+        schema:
+          type: number
+      - name: b
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/power":
+    get:
+      summary: Raise a to the power of b
+      tags:
+      - Math
+      parameters:
+      - name: a
+        in: query
+        required: true
+        schema:
+          type: number
+      - name: b
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/mod":
+    get:
+      summary: Modulus of a and b
+      tags:
+      - Math
+      parameters:
+      - name: a
+        in: query
+        required: true
+        schema:
+          type: number
+      - name: b
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/sqrt":
+    get:
+      summary: square root of a number
+      tags:
+      - Math
+      parameters:
+      - name: "n"
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/log10":
+    get:
+      summary: log base 10
+      tags:
+      - Math
+      parameters:
+      - name: "n"
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/ln":
+    get:
+      summary: natural logarithm
+      tags:
+      - Math
+      parameters:
+      - name: "n"
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/sin":
+    get:
+      summary: sin of angle in degrees
+      tags:
+      - Math
+      parameters:
+      - name: x
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/cos":
+    get:
+      summary: cos of angle in degrees
+      tags:
+      - Math
+      parameters:
+      - name: x
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+  "/tan":
+    get:
+      summary: tan of angle in degrees
+      tags:
+      - Math
+      parameters:
+      - name: x
+        in: query
+        required: true
+        schema:
+          type: number
+      responses:
+        '200':
+          description: successful
+servers:
+- url: http://localhost:3000/api/v1
+  description: Local server
