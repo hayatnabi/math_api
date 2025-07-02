@@ -20,7 +20,8 @@ RSpec.configure do |config|
       info: {
         title: 'Math API V1',
         version: 'v1',
-        description: 'API for basic math operations: add, subtract, multiply, divide, sqrt, power, mod, log, trigonometry functions.'
+        description: 'API for basic math operations: add, subtract, multiply, divide, sqrt, power, mod, log, trigonometry functions. Go to <a href="http://localhost:3000/api/v1/help"><b>http://localhost:3000/api/v1/help</b></a> for more details.
+',
       },
       paths: {},
       servers: [
