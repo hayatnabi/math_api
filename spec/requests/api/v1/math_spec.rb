@@ -1,22 +1,5 @@
 require 'swagger_helper'
 
-# RSpec.describe 'Math API', type: :request do
-#   path '/add' do
-#     get('add numbers') do
-#       tags 'Math'
-#       produces 'application/json'
-#       parameter name: :a, in: :query, type: :number, required: true
-#       parameter name: :b, in: :query, type: :number, required: true
-
-#       response(200, 'successful') do
-#         let(:a) { 2 }
-#         let(:b) { 3 }
-#         run_test!
-#       end
-#     end
-#   end
-# end
-
 RSpec.describe 'Math API', type: :request do
   [
     { path: '/add',        desc: 'Add two numbers' },
